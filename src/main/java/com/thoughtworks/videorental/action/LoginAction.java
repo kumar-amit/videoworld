@@ -41,4 +41,5 @@ public class LoginAction extends ActionSupport {
         }
         return SUCCESS;
     }
+
 }
