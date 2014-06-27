@@ -5,7 +5,6 @@ import com.thoughtworks.videorental.domain.Customer;
 import com.thoughtworks.videorental.domain.repository.CustomerRepository;
 import com.thoughtworks.videorental.domain.specification.CustomerWithNameSpecification;
 import com.thoughtworks.videorental.domain.specification.CustomersOrderedByNameComparator;
-
 import java.util.Set;
 
 public class LoginAction extends ActionSupport {
@@ -35,12 +34,12 @@ public class LoginAction extends ActionSupport {
         if (customerName == null) {
             return LOGIN;
         }
-
+    
         loggedInCustomer = customerRepository.selectUnique(new CustomerWithNameSpecification(customerName));
         if (loggedInCustomer == null) {
             return LOGIN;
         }
-
+    
         return SUCCESS;
     }
 }
