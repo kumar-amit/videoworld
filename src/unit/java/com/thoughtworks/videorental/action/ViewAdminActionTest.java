@@ -22,6 +22,7 @@ public class ViewAdminActionTest {
 
         ViewAdminAction action = new ViewAdminAction(customerRepository);
         assertThat(action.getUsers(), is(users));
+        assertTrue(false);
     }
 
 }
