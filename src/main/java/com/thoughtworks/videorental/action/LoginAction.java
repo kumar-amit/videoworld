@@ -39,7 +39,6 @@ public class LoginAction extends ActionSupport {
         if (loggedInCustomer == null) {
             return LOGIN;
         }
-    
         return SUCCESS;
     }
 }
