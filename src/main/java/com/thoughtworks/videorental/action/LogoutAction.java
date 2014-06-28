@@ -7,12 +7,14 @@ import java.util.Map;
 
 public class LogoutAction extends ActionSupport implements SessionAware {
 
+
+
+
     private SessionMap<String, Object> session;
     @Override
     public void setSession(Map<String, Object> session) {
         this.session = (SessionMap<String, Object>) session;
     }
-
     @Override
     public String execute() throws Exception {
         session.invalidate();
