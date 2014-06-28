@@ -9,10 +9,11 @@ import java.util.Set;
 
 public class LoginAction extends ActionSupport {
 
+
+
     private final CustomerRepository customerRepository;
     private String customerName;
     private Customer loggedInCustomer;
-
     public LoginAction(final CustomerRepository customerRepository) {
         this.customerRepository = customerRepository;
     }
